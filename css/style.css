@@ -1,0 +1,88 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family:'Segoe UI', sans-serif;
+    background-color: #767776;
+}
+a {
+    color: #cdc5f8 !important;
+}
+a:hover {
+    color: #fff !important;
+}
+.navbar-brand {
+    transition: 0.4s;
+}
+.navbar-brand:hover {
+    text-shadow: 10px 10px 20px #fff, -10px -10px 20px #fff;
+}
+.dropdown-menu li a {
+    text-shadow: 1px 1px 0px #000;
+}
+.carousel-inner .carousel-caption {
+    background-color: rgba(255 , 255, 255, 0.2);
+    border-radius: 7px;
+}
+.fixed {
+    background-size: cover;
+    height: 250px;
+    background-attachment: fixed;
+}
+.fixed-1 {
+    background-image: url(../img/back1.jpg);
+}
+.fixed-2 {
+    background-image: url(../img/back2.jpg);
+}
+.copy {
+    position: relative;
+    left: 30px;
+}
+.copy::after {
+    content: "";
+    position: absolute;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent lightblue transparent;
+    left: 14px;
+    top: 20px;
+    display: none;
+}
+.copy::before {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 43px;
+    background-color: lightblue;
+    border-radius: 7px;
+    top: 40px;
+    left: -15px;
+    display: none;
+}
+.copy:hover:before {
+    content: "Copy to clipboard";
+    display: block;
+}
+.copy:active::before {
+    content: "Copied";
+    display: block;
+}
+.copy:active::after,
+.copy:hover::after{
+    display: block;
+}
+.facebook {
+    height: 30px;
+    width: 30px;
+    border: 1px solid #000;
+    border-radius: 50%;
+}
+.icon {
+    margin-right: 10px;
+}
